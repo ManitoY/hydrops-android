@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/cn.bmob.android/bmob-sdk/3.5.0/jars/libs/okhttp-3.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e7cb33d9f82d3b8521c6594b180f4dd9fc6d49f2">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/okhttp-3.3.1_3d5a61fd7883e7373f5861244b6f0cfbc0228270.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/cn.bmob.android/bmob-sdk/3.5.0/jars/libs/rxjava-1.1.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ac615240b277e7fd3950d7b35f73b733f310cede">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/rxjava-1.1.6_876047995dbd8ad748fb5429b51098e9f5dcd1f8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-support-media-compat-25.1.0_c9f84f578d31765a83b64f89906f6dcfb3d9ca73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-support-compat-25.1.0_d3af507cc8394ef9b38b27e09fac90e6f27ec3df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-animated-vector-drawable-23.2.1_d3eb76e58659b6f1e300ac42f6fa7c7b84cd169d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/hydrops-android.libraries/charts/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="01cabb2222e5dc3fe98830702b887c9b35512a9c">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/hydrops-android.libraries-charts-unspecified_8875a52104b85eeb3773683b496dd28677c5b768.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/design/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="72961d8b453b46e277702f18de9d210bc019e36e">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-design-23.2.1_b56690b4601c82cca3a063b669e472ce8a029ee1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/cn.bmob.android/bmob-sdk/3.5.0/jars/libs/gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="dd625f5e7bba8235782b5dc4244c3fd26953190f">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/gson-2.6.2_960887499809e616104d56ad2abb8e30928941ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-support-fragment-25.1.0_f5d21532c73cbf7ed6c471b37a7d2d89f5797079.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.squareup.leakcanary/leakcanary-android/1.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9066b6d4e2536b49e3b58aa301fd925247032df0">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.squareup.leakcanary-leakcanary-android-1.3.1_f278758e10f05adcf9ebf943032173f99e187da6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-support-core-utils-25.1.0_81bf902857c59571b3ff5ae5cc38321658e27327.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-support-core-ui-25.1.0_7d25fde0891d4c1be3121a56a618a808478f5fd5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-recyclerview-v7-23.2.1_c2d98c98dd78cea23aea812130a9e44db78fb119.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-support-vector-drawable-23.2.1_82b869707b1714ac586e3a18126ad617f0b21aa6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/.gradle/caches/modules-2/files-2.1/com.squareup.haha/haha/1.3/d2c832f9d14a11c79f58a7ee2e10526a12152c72/haha-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d2c832f9d14a11c79f58a7ee2e10526a12152c72">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/haha-1.3_1aa587089c91a4a4ddc01a72a8022f0fa056580b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.github.chrisbanes/PhotoView/1.2.6/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e39dd45427d2ba136c82ed1946f80dd3dff16695">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.github.chrisbanes-PhotoView-1.2.6_a02e1391d52daede747fcb3fdbfca9e52bf48bc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/butterknife-7.0.1_cebbde6515562fe973a975048f12175ce31d087e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/3.0.0-beta1/d4a559b2dfb3e8a00ed37c440e118584f60db046/eventbus-3.0.0-beta1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d4a559b2dfb3e8a00ed37c440e118584f60db046">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/eventbus-3.0.0-beta1_4b7e04ef7928287175bd929b6ba508f82e64aa5b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/cn.bmob.android/bmob-sdk/3.5.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e47f10299673ab68f24c595f96b18086cc9a8384">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/cn.bmob.android-bmob-sdk-3.5.0_20ac574b839ab7ac17e899fc689928f3e45a8f93.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-appcompat-v7-23.2.1_8d0af6e4525b9fac6dbbf0e5ea8cad120266b6b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/libs/IndoorscapeAlbumPlugin.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b6c8bf896e0d23f4003b9a3cab4bff9af9adefda">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/IndoorscapeAlbumPlugin_2b5644c15cf20fbe175c32a4e327f9618d9a72b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.kogitune/pre-lollipop-activity-transition/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5303e32634d0acde142b05e4c3aedc66f7604ddb">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.kogitune-pre-lollipop-activity-transition-1.3.0_b4be55b5a2106c8dea8ebecb952ddd5fef12ce7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/libs/BaiduLBS_Android.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a37829e305fef49abb29e6ccafb812e38744cf96">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/BaiduLBS_Android_4feae97ecb87a73b9e0cd8832e9e42ecce2c3782.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.0/support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/support-annotations-25.1.0_2d2e6d87c70812af1bd5a740ad79dfa613fc681a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/com.android.support-support-v4-25.1.0_8e7e6e1d6f4498e9715fc85aad4a8d8dee480b78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-analyzer/1.3.1/325e7401a7ea16918eb39ba8baad8fd5561a55d3/leakcanary-analyzer-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="325e7401a7ea16918eb39ba8baad8fd5561a55d3">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/leakcanary-analyzer-1.3.1_566b9acc557b63f88c4e3407509dbc90d4d739cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/glide-3.6.1_464f525216fe3685b8cec6ca30d1d8ac47b3bd70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/libs/httpmime-4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ed8b5ee0167cb27dea55851259eb34b609f31df0">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/httpmime-4.1.2_1f5ca053a0f3b0f5c81485461980d69f21e0a526.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/picasso-2.5.2_477f4529981a41a76ef694b5411dc8721539f376.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/hydrops-android.libraries/jpush/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2d7e727a878a832eacc59f17060453a750e9fc40">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/hydrops-android.libraries-jpush-unspecified_9cde6ad2d66d79d943edeb94eab0bf51394c8c03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/.gradle/caches/modules-2/files-2.1/com.squareup.leakcanary/leakcanary-watcher/1.3.1/6904771474c058abfc5912c13d12b02754712165/leakcanary-watcher-1.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6904771474c058abfc5912c13d12b02754712165">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/leakcanary-watcher-1.3.1_d427b509333e7876c4dcd85474b3b91ee8f472bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/cn.bmob.android/bmob-sdk/3.5.0/jars/libs/BmobSDK_3.5.0_20160630.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8eb5c605a02f792e326c5ac8e4feb2c18dd171ad">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/BmobSDK_3.5.0_20160630_9a2b5bed29937d12d734597dc0372d66d50f4864.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/cn.bmob.android/bmob-sdk/3.5.0/jars/libs/rxandroid-1.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="19beef6debb6a22febc28777464c71bfccbafe3d">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/rxandroid-1.2.0_5d817edfdf433f5444e21794b2c148e8477bb8a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/hydrops-android.libraries/jpush/unspecified/jars/libs/jpush-android-2.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="887d4516b303c12d900f41ad6db2a7f4105041a5">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/jpush-android-2.2.0_9faeabed0aa26abcff24f8dcd723e8f302856bc4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/exploded-aar/cn.bmob.android/bmob-sdk/3.5.0/jars/libs/okio-1.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bbeca71da43c8f4bc9ceedec002060f53437ad26">
+        <dex dex="/Users/shengwei.yi/Downloads/hydrops-android/app/build/intermediates/pre-dexed/zwu/debug/okio-1.7.0_7d254bb2962b8a4c1298b8335e235867d3004adf.jar" />
+    </item>
+
+</items>
