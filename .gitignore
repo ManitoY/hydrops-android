@@ -24,6 +24,7 @@ proguard/
 
 # Android Studio
 .idea/
+.idea/workspace.xml
 .gradle
 .DS_Store
 /*/local.properties
@@ -38,3 +39,4 @@ proguard/
 zwuCard
 node_modules/
 rocoofix/
+
