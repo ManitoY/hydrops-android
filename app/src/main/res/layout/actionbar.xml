@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/actionbar_left_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="8dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:src="@drawable/back_btn"
+        android:visibility="gone"/>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/actionbar_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawablePadding="3dp"
+        android:drawableRight="@drawable/role_arrow_down"
+        android:paddingBottom="8dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="3"
+        android:maxWidth="250dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/actionbar_right_btn"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_alignBottom="@+id/actionbar_title"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:text="发送"
+        android:background="@drawable/talk_info_send_btn_selector"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/actionbar_right_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="14dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

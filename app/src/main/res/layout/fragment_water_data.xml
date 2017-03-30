@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.edu.zwu.hydrops.view.ChartScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/water_data_image_layout"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_gravity="center">
+
+            <com.edu.zwu.hydrops.view.BannerViewPager
+                android:id="@+id/water_data_image_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="280dp" />
+
+            <com.edu.zwu.hydrops.view.IndicatorView
+                android:id="@+id/water_data_image_banner_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/water_data_image_viewpager"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/water_data_gay_bg"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp">
+
+            <com.edu.zwu.hydrops.view.FontTextView
+                android:id="@+id/water_data_depth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="最高积水深度\n0.5m"
+                android:textColor="@color/water_data_black_text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/map_bottom_btn_line"/>
+            <com.edu.zwu.hydrops.view.FontTextView
+                android:id="@+id/water_data_acreage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="最高积水深度\n0.5m"
+                android:textColor="@color/water_data_black_text" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/map_bottom_btn_line"/>
+            <com.edu.zwu.hydrops.view.FontTextView
+                android:id="@+id/water_data_expect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="最高积水深度\n0.5m"
+                android:textColor="@color/water_data_black_text" />
+        </LinearLayout>
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:paddingTop="20dp"
+            android:text="水位深度历史数据表"
+            android:textColor="@color/water_data_black_text"
+            android:textSize="18sp" />
+
+        <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</com.edu.zwu.hydrops.view.ChartScrollView>

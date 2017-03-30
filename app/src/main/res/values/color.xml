@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主题蓝 -->
+    <color name="actionbar_blue">#FF1599DC</color>
+    <!-- 导航栏颜色-->
+    <color name="navigation_bar_color">#323232</color>
+    <!-- 登录上下分隔线 -->
+    <color name="login_line">#7FD6D7DC</color>
+    <!-- 登录中分隔线 -->
+    <color name="login_line_middle">#7FE1E1E1</color>
+    <!-- 跑马灯背景 -->
+    <color name="marquee_background">#80FFF68F</color>
+    <!-- 登录/注册按钮的透明背景框-->
+    <color name="transparent_white">#32FFFFFF</color>
+    <!-- 登录的透明背景框-->
+    <color name="transparent_black">#32000000</color>
+    <!-- 个人中心的背景-->
+    <color name="activity_background">#EFEFEF</color>
+    <!-- 个人中心的外分隔线-->
+    <color name="personal_out_separation_line">#D6D7DC</color>
+    <!-- 个人中心的内分隔线-->
+    <color name="personal_in_separation_line">#E1E1E1</color>
+    <!-- 个人中心的字体颜色-->
+    <color name="personal_text_color">#323232</color>
+
+    <!-- 地图的下操作栏字体颜色-->
+    <color name="map_bottom_text_color">#808080</color>
+    <!-- 地图的弹窗的分隔线颜色-->
+    <color name="map_window_line_color">#B4B4B4</color>
+    <!-- 地图的弹窗的灰色字体-->
+    <color name="map_window_middle_text_color">#6E7271</color>
+    <!-- 地图的弹窗的红色字体-->
+    <color name="map_window_edge_text_color">#F45C55</color>
+    <!-- 地图的搜索一栏的字体-->
+    <color name="map_search_text_color">#929292</color>
+    <!-- 相册纯文字背景-->
+    <color name="message_text_color">#DDDDDD</color>
+    <!-- 搜索框内文字的颜色-->
+    <color name="search_input_text_color">#999999</color>
+    <!-- 关于我们的背景颜色-->
+    <color name="about_me_background">#F9F9F9</color>
+    <!-- 关于我们的字体颜色-->
+    <color name="about_me_text_color">#3D47B8</color>
+    <!-- 关于加载成功和失败的字体颜色-->
+    <color name="loading_text_color">#999999</color>
+    <!-- 设置的淡黑色字体-->
+    <color name="setting_light_black">#9A9A9A</color>
+    <!-- 水位信息里面的字体-->
+    <color name="water_data_black_text">#323232</color>
+    <!-- 水位信息里面蓝色字体-->
+    <color name="water_data_blue_text">#00a0e9</color>
+    <!-- 水位信息里面灰色背景-->
+    <color name="water_data_gay_bg">#EBEBEB</color>
+    <!-- 相册预览字体的颜色-->
+    <color name="album_preview_text_color">#828282</color>
+    <!-- 相册预览前面线的颜色-->
+    <color name="album_preview_line_color">#222327</color>
+
+
+    <color name="compat_holo_blue_bright">#FF00DDFF</color>
+    <color name="compat_holo_green_light">#FF99CC00</color>
+    <color name="compat_holo_orange_light">#FFFFBB33</color>
+    <color name="compat_holo_red_light">#FFFF4444</color>
+
+    <!-- 透明背景-->
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+
+</resources>

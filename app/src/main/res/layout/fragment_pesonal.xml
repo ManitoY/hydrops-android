@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background">
+    <LinearLayout
+        android:id="@+id/personal_head_unlogin_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/pesonal_background"
+        android:gravity="center">
+        <Button
+            android:id="@+id/personal_head_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/pesonal_btn_selector"
+            android:textColor="@android:color/white"
+            android:text="登录/注册"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personal_head_login_layout"
+        android:onClick="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/pesonal_background"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <com.edu.zwu.hydrops.view.CircleImageView
+            android:id="@+id/personal_head_img"
+            android:layout_marginTop="45dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/head"/>
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:id="@+id/personal_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:text="你不是一个人"/>
+
+        <EditText
+            android:id="@+id/personal_head_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/personal_text_color"
+            android:textSize="15sp"
+            android:visibility="gone"
+            android:text="你不是一个人"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/personal_out_separation_line"/>
+
+    <RelativeLayout
+        android:id="@+id/personal_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp">
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="8dp"
+            android:layout_centerVertical="true"
+            android:text="汛友圈"
+            android:textSize="16sp"
+            android:textColor="@color/personal_text_color"
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/icon_personal_friends"/>
+        <com.edu.zwu.hydrops.view.CircleImageView
+            android:id="@+id/personal_update_head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/personal_red_point"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/red_point"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:src="@color/personal_in_separation_line"/>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/personal_news"
+        style="@style/pesonal_text_list_style"
+        android:text="新闻"
+        android:drawableLeft="@drawable/icon_personal_news"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:src="@color/personal_in_separation_line"/>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/personal_upload"
+        style="@style/pesonal_text_list_style"
+        android:text="上传"
+        android:drawableLeft="@drawable/icon_personal_camera"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/personal_out_separation_line"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:src="@color/personal_out_separation_line"/>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/personal_set"
+        style="@style/pesonal_text_list_style"
+        android:text="设置"
+        android:drawableLeft="@drawable/icon_personal_setting"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/personal_out_separation_line"/>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/personal_about"
+        style="@style/pesonal_text_list_style"
+        android:text="关于我们"
+        android:drawableLeft="@drawable/icon_personal_question"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:src="@color/personal_in_separation_line"/>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/personal_exit"
+        style="@style/pesonal_text_list_style"
+        android:text="退出"
+        android:drawableLeft="@drawable/icon_personal_exit"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@color/personal_out_separation_line"/>
+
+</LinearLayout>

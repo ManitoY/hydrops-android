@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/loading_fail_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:visibility="gone"
+    >
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/loading_fail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:drawablePadding="10dp"
+        android:drawableTop="@drawable/loading_fail"
+        android:gravity="center_horizontal"
+        android:text="加载失败，请点击重试按钮"
+        android:textColor="@color/loading_text_color"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/loading_fail_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/pursenow_selector"
+        android:layout_gravity="center"
+        android:text="重试"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

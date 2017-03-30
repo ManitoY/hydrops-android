@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/total_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <com.edu.zwu.hydrops.view.CircleImageView
+        android:id="@+id/item_head"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/head" />
+
+    <LinearLayout
+        android:id="@+id/item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_head"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/item_head"
+        android:orientation="vertical">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:id="@+id/item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="鱼塘少主"
+            android:textColor="@color/blue" />
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:id="@+id/item_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="今天的雨好大，积水很严重啊！"
+            android:textColor="@android:color/black" />
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxHeight="150dp"
+            android:maxWidth="200dp"
+            android:scaleType="centerInside"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/friend_img_btn_selector"
+            android:src="@drawable/page" />
+    </LinearLayout>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:id="@+id/item_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_ll"
+        android:layout_below="@+id/item_ll"
+        android:layout_marginTop="15dp"
+        android:text="1小时前" />
+
+    <ImageView
+        android:id="@+id/item_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/item_time"
+        android:src="@drawable/icon_friend_comment" />
+
+    <LinearLayout
+        android:id="@+id/reply_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_time"
+        android:layout_alignRight="@+id/item_send"
+        android:layout_below="@+id/item_time"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/reply_bg"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reply_layout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/deep_divider" />
+</RelativeLayout>

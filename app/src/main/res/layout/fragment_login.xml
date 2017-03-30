@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.edu.zwu.hydrops.view.LoginLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_total_scrollview"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:scrollbars="none">
+    <LinearLayout
+        android:id="@+id/login_total_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <com.edu.zwu.hydrops.view.CircleImageView
+            android:id="@+id/login_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/icon_register_head"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@color/login_line"/>
+
+            <LinearLayout
+                android:id="@+id/login_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@android:color/white">
+
+                <ImageView
+                    style="@style/login_img_style"
+                    android:src="@drawable/icon_account"/>
+
+                <EditText
+                    android:id="@+id/login_input_account"
+                    style="@style/login_edit_style"
+                    android:layout_weight="1"
+                    android:hint="请输入用户名"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@color/login_line_middle"/>
+
+            <LinearLayout
+                android:id="@+id/login_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@android:color/white">
+
+                <ImageView
+                    style="@style/login_img_style"
+                    android:src="@drawable/icon_password"/>
+
+                <EditText
+                    android:id="@+id/login_input_password"
+                    style="@style/login_edit_style"
+                    android:hint="请输入密码"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@color/login_line"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:layout_marginTop="5dp">
+                <com.edu.zwu.hydrops.view.FontTextView
+                    android:id="@+id/login_forget_btn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="忘记密码？"/>
+                <com.edu.zwu.hydrops.view.FontTextView
+                    android:id="@+id/login_register_btn"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="注册新用户"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_activity_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_btn_selector"
+            android:gravity="center_horizontal"
+            android:text="登 录"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</com.edu.zwu.hydrops.view.LoginLayout>

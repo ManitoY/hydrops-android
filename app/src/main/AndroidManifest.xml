@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edu.zwu.hydrops"
+    android:installLocation="auto">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"/>
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 设置手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.edu.zwu.hydrops.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="城市积水监测"
+        android:theme="@style/Theme.App">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="V0G8sX49tsuX9y8TwWDKiW7bql8cTmUx"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.LoadingActivity"
+            android:theme="@style/Theme.StartUp"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.edu.zwu.hydrops.activity.MapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Map">
+        </activity>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.RegisterSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.StartUp"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.PersonalActivity"
+            android:theme="@style/Theme.Transparent"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.FriendActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.NewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.WebPagerActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.TalkInfoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.AlbumActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.WaterDataActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.CoverChooseActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.MyAlbumActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.SearchActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.SettingActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.CameraActivity"
+            android:theme="@style/Theme.StartUp"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name="com.edu.zwu.hydrops.activity.PictureMagnifiedActivity"
+            android:theme="@style/Translucent"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.edu.zwu.hydrops.activity.AboutWeActivity"
+            android:screenOrientation="portrait"/>
+
+        <receiver android:name="com.edu.zwu.hydrops.receiver.MyReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <category android:name="com.edu.zwu.watermonitor"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote">
+        </service>
+    </application>
+
+
+</manifest>

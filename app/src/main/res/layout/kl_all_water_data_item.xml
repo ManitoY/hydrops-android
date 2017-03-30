@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/water_data_item_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/page"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/water_data_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:id="@+id/water_data_item_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="海创园"/>
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/water_data_item_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="告警级别："
+            android:drawableRight="@color/red"/>
+    </LinearLayout>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:layout_margin="10dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/water_data_item_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1千米"/>
+
+    <ImageView
+        android:layout_below="@+id/water_data_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider"/>
+
+</RelativeLayout>

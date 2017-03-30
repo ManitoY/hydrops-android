@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/new_img_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/new_list_img"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/head"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_toRightOf="@+id/new_img_layout"
+        android:layout_alignBottom="@+id/new_img_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:id="@+id/new_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:text="杭州解除暴雨蓝色预警信号 取消防汛四级应急响应"/>
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:id="@+id/new_list_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:text="15日，浙江杭州市气象台于12时50分发布暴雨..."/>
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:id="@+id/new_list_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="8sp"
+            android:layout_marginTop="10dp"
+            android:text="2015-10-15"/>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/new_img_layout"/>
+</RelativeLayout>

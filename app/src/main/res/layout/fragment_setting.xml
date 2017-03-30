@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            style="@style/setting_text_style"
+            android:text="接收推送通知" />
+
+        <com.edu.zwu.hydrops.view.SettingSwitch
+            android:id="@+id/push_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            style="@style/setting_text_style"
+            android:text="声音" />
+
+        <com.edu.zwu.hydrops.view.SettingSwitch
+            android:id="@+id/voice_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider" />
+
+    <LinearLayout
+        android:id="@+id/setting_voice_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            style="@style/setting_text_style"
+            android:text="新消息提示音" />
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/setting_light_black"
+            android:text="跟随系统"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/setting_voice_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            style="@style/setting_text_style"
+            android:text="振动" />
+
+        <com.edu.zwu.hydrops.view.SettingSwitch
+            android:id="@+id/vibrates_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            style="@style/setting_text_style"
+            android:text="汛友圈更新" />
+
+        <com.edu.zwu.hydrops.view.SettingSwitch
+            android:id="@+id/friend_fresh_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <com.edu.zwu.hydrops.view.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="关闭后，有汛友圈更新时，不再出现红点提示"
+        android:textColor="@color/setting_light_black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/deep_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            style="@style/setting_text_style"
+            android:text="不显示安全积水点位置" />
+
+        <com.edu.zwu.hydrops.view.SettingSwitch
+            android:id="@+id/show_safe_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <com.edu.zwu.hydrops.view.FontTextView
+            style="@style/setting_text_style"
+            android:text="只显示不可通行积水位置" />
+
+        <com.edu.zwu.hydrops.view.SettingSwitch
+            android:id="@+id/show_nopass_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deep_divider" />
+</LinearLayout>
