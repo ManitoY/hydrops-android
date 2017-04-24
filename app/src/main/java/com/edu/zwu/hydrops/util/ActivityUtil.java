@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 
 import com.edu.zwu.hydrops.R;
@@ -22,6 +23,7 @@ import com.edu.zwu.hydrops.activity.RegisterSuccessActivity;
 import com.edu.zwu.hydrops.activity.SettingActivity;
 import com.edu.zwu.hydrops.activity.TalkInfoActivity;
 import com.edu.zwu.hydrops.activity.WebPagerActivity;
+import com.edu.zwu.hydrops.system.AppStatusConstant;
 
 /**
  * Created by shengwei.yi on 2016/4/28.

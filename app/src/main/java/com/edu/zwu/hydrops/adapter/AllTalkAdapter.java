@@ -6,6 +6,9 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
@@ -29,6 +32,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.GlideDrawable;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.GlideDrawableImageViewTarget;
+import com.edu.zwu.hydrops.MyApplication;
 import com.edu.zwu.hydrops.R;
 import com.edu.zwu.hydrops.activity.CoverChooseActivity;
 import com.edu.zwu.hydrops.activity.MyAlbumActivity;
@@ -36,6 +40,7 @@ import com.edu.zwu.hydrops.activity.PictureMagnifiedActivity;
 import com.edu.zwu.hydrops.base.BaseActivity;
 import com.edu.zwu.hydrops.bmob.MyUser;
 import com.edu.zwu.hydrops.bmob.Talk;
+import com.edu.zwu.hydrops.emoticon.BitmapLruCache;
 import com.edu.zwu.hydrops.util.AppUtil;
 import com.edu.zwu.hydrops.view.CircleImageView;
 import com.edu.zwu.hydrops.view.FontTextView;
@@ -46,8 +51,10 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.BmobWrapper;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.UpdateListener;
@@ -95,8 +102,10 @@ public class AllTalkAdapter extends BaseRecyclerListAdapter<Talk, AllTalkAdapter
     }
 
     private void getUserInfo() {
-        MyUser currentUser = BmobUser.getCurrentUser(MyUser.class);
-        mPetName = currentUser.getPetName();
+        if(BmobWrapper.getInstance() != null) {
+            MyUser currentUser = BmobUser.getCurrentUser(MyUser.class);
+            mPetName = currentUser.getPetName();
+        }
     }
 
     @Override
@@ -137,7 +146,7 @@ public class AllTalkAdapter extends BaseRecyclerListAdapter<Talk, AllTalkAdapter
         mInputLayout = (LinearLayout) mActivity.findViewById(R.id.input_layout);
         mInputView = (EditText) mActivity.findViewById(R.id.input_view);
         Button button = (Button) mActivity.findViewById(R.id.send_btn);
-        if(button != null) {
+        if (button != null) {
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -159,7 +168,7 @@ public class AllTalkAdapter extends BaseRecyclerListAdapter<Talk, AllTalkAdapter
                     talk.update(talk.getObjectId(), new UpdateListener() {
                         @Override
                         public void done(BmobException e) {
-                            if(e == null){
+                            if (e == null) {
                                 refreshData();
                                 mInputView.setText("");
                             } else {
@@ -216,7 +225,7 @@ public class AllTalkAdapter extends BaseRecyclerListAdapter<Talk, AllTalkAdapter
         bmobQuery.findObjects(new FindListener<Talk>() {
             @Override
             public void done(List<Talk> list, BmobException e) {
-                if(e == null){
+                if (e == null) {
                     refreshViewByReplaceData(list);
                     dismissProgressDialog();
                 } else {
@@ -321,7 +330,7 @@ public class AllTalkAdapter extends BaseRecyclerListAdapter<Talk, AllTalkAdapter
             imageView.setMaxHeight(mActivity.height);
             final ProgressBar progressBar = (ProgressBar) view.findViewById(R.id.progress);
             progressBar.setVisibility(View.VISIBLE);
-            Glide.with(mActivity).load(path).into(new GlideDrawableImageViewTarget(imageView){
+            Glide.with(mActivity).load(path).into(new GlideDrawableImageViewTarget(imageView) {
                 @Override
                 public void onResourceReady(GlideDrawable resource, GlideAnimation<? super GlideDrawable> animation) {
                     progressBar.setVisibility(View.GONE);

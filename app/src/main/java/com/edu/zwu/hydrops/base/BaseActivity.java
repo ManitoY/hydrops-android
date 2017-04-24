@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,9 @@ import com.edu.zwu.hydrops.activity.MapActivity;
 import com.edu.zwu.hydrops.activity.PictureMagnifiedActivity;
 import com.edu.zwu.hydrops.activity.RegisterSuccessActivity;
 import com.edu.zwu.hydrops.libraries.jpush.Jpush;
+import com.edu.zwu.hydrops.system.AppStatusConstant;
+import com.edu.zwu.hydrops.system.AppStatusManager;
+import com.edu.zwu.hydrops.util.ActivityUtil;
 import com.edu.zwu.hydrops.view.FontTextView;
 
 import butterknife.ButterKnife;
@@ -41,12 +45,33 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected Button actionBarRightBtn;
     protected ImageView actionBarRightImg;
 
+    protected Bundle mSavedInstanceState;
+
     public static int width;
     public static int height;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mSavedInstanceState = savedInstanceState;
+        switch (AppStatusManager.getInstance().getAppStatus()) {
+            case AppStatusConstant.STATUS_FORCE_KILLED:
+                restartApp();
+                break;
+            case AppStatusConstant.STATUS_NORMAL:
+                launchActivity();
+                break;
+        }
+    }
+
+    protected void restartApp() {
+        Intent intent = new Intent(this, MapActivity.class);
+        intent.putExtra(AppStatusConstant.KEY_HOME_ACTION, AppStatusConstant.ACTION_RESTART_APP);
+        startActivity(intent);
+        overridePendingTransition(R.anim.slide_in_right, R.anim.activity_close_enter);
+    }
+
+    protected void launchActivity() {
         mContext = this;
         thisActivity = this;
         mIntent = getIntent();
@@ -63,14 +88,14 @@ public abstract class BaseActivity extends AppCompatActivity {
                 // 初始化 Bmob SDK
                 // 使用时请将第二个参数Application ID替换成你在Bmob服务器端创建的Application ID
                 Bmob.initialize(this, "df5d1c8243675d6c4d0fecf2e6979099");
-                afterViews(savedInstanceState);
+                afterViews(mSavedInstanceState);
             }
         } else {
             setContentView(R.layout.activity_base);
             // 初始化 Bmob SDK
             // 使用时请将第二个参数Application ID替换成你在Bmob服务器端创建的Application ID
             Bmob.initialize(this, "df5d1c8243675d6c4d0fecf2e6979099");
-            afterViews(savedInstanceState);
+            afterViews(mSavedInstanceState);
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.add(R.id.frameLayout, getFragment()).commit();
         }

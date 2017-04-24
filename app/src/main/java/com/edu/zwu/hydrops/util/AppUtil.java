@@ -7,8 +7,12 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
+import android.util.Pair;
 import android.util.TypedValue;
+import android.view.Display;
 import android.view.Gravity;
+import android.view.WindowManager;
 import android.widget.Toast;
 
 import com.edu.zwu.hydrops.Constants;
@@ -21,7 +25,9 @@ import org.json.JSONObject;
 
 import java.lang.reflect.Field;
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -160,6 +166,28 @@ public class AppUtil {
     }
 
     /**
+     * sp转px
+     */
+    public static int convertSpToPx(float sp) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, sp, MyApplication.mContext.getResources().getDisplayMetrics());
+    }
+
+    /**
+     * px转dp
+     * @param px
+     * @return
+     */
+    public static int convertPxToDp(float px) {
+        WindowManager wm = (WindowManager) MyApplication.mContext.getSystemService(Context.WINDOW_SERVICE);
+        Display display = wm.getDefaultDisplay();
+        DisplayMetrics metrics = new DisplayMetrics();
+        display.getMetrics(metrics);
+        float logicalDensity = metrics.density;
+        float dp = px / logicalDensity;
+        return (int) dp;
+    }
+
+    /**
      * 处理推送消息的action
      *
      * @param context
@@ -245,4 +273,7 @@ public class AppUtil {
         return map;
     }
 
+    public static boolean isListEmpty(List list) {
+        return list != null && list.size() > 0;
+    }
 }

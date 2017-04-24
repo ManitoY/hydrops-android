@@ -53,6 +53,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.edu.zwu.hydrops.activity.MapActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Map">
         </activity>

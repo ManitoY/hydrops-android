@@ -8,8 +8,6 @@
     <color name="login_line">#7FD6D7DC</color>
     <!-- 登录中分隔线 -->
     <color name="login_line_middle">#7FE1E1E1</color>
-    <!-- 跑马灯背景 -->
-    <color name="marquee_background">#80FFF68F</color>
     <!-- 登录/注册按钮的透明背景框-->
     <color name="transparent_white">#32FFFFFF</color>
     <!-- 登录的透明背景框-->
@@ -23,8 +21,6 @@
     <!-- 个人中心的字体颜色-->
     <color name="personal_text_color">#323232</color>
 
-    <!-- 地图的下操作栏字体颜色-->
-    <color name="map_bottom_text_color">#808080</color>
     <!-- 地图的弹窗的分隔线颜色-->
     <color name="map_window_line_color">#B4B4B4</color>
     <!-- 地图的弹窗的灰色字体-->
@@ -64,7 +60,5 @@
 
     <!-- 透明背景-->
     <color name="transparent">#00000000</color>
-    <color name="red">#FF0000</color>
-    <color name="blue">#0000FF</color>
 
 </resources>

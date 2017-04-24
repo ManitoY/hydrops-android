@@ -92,7 +92,7 @@
 
 -keep class com.edu.zwu.hydrops.base.** { *; }
 -keepclasseswithmembernames class * {
-    @com.edu.zwu.watermonitor.* <fields>;
+    @com.edu.zwu.hydrops.* <fields>;
 }
 
 -dontwarn retrofit.**

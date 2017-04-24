@@ -2,6 +2,7 @@ package com.edu.zwu.hydrops.fragment;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
@@ -87,6 +90,12 @@ public class AlbumFragment extends BaseFragment<AlbumPresenter> implements Album
             int height = mHeight / 4;
             viewHolder.mTotalLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, height));
             Glide.with(thisActivity).load("file://" + lp).placeholder(R.drawable.default_picture).into(viewHolder.mAlbumImageView);
+            viewHolder.mAlbumCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    ((View)buttonView.getParent()).findViewById(R.id.album_image_view).setAlpha(isChecked ? 0.7f : 1f);
+                }
+            });
         }
 
         class ViewHolder extends RecyclerView.ViewHolder {
@@ -94,6 +103,9 @@ public class AlbumFragment extends BaseFragment<AlbumPresenter> implements Album
             FrameLayout mTotalLayout;
             @Bind(R.id.album_image_view)
             ImageView mAlbumImageView;
+            @Bind(R.id.album_check_box)
+            CheckBox mAlbumCheckBox;
+
 
             public ViewHolder(View itemView) {
                 super(itemView);

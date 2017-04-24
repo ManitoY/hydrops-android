@@ -5,11 +5,13 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Environment;
 import android.preference.PreferenceManager;
+import android.util.Pair;
 
 import com.edu.zwu.hydrops.libraries.jpush.Jpush;
 import com.edu.zwu.hydrops.util.AppUtil;
 
 import java.io.File;
+import java.util.ArrayList;
 
 
 /**
@@ -34,6 +36,8 @@ public class MyApplication extends Application {
     public static final String SETTINGFRIENDFRESH = "setting_friend_fresh";
     public static final String SETTINGSHOWSAFE = "setting_show_safe";
     public static final String SETTINGSHOWNOPASS = "setting_show_no_pass";
+    public static final String EMOJIKEY = "emoji_key";
+    public static final String EMOJIVALUE = "emoji_value";
 
     public MyApplication() {
         super();
@@ -227,5 +231,21 @@ public class MyApplication extends Application {
 
     public static boolean getShowNoPassSetting() {
         return config.getBoolean(SETTINGSHOWNOPASS, false);
+    }
+
+    public static void addEmojiKey(String key){
+        config.edit().putString(EMOJIKEY, key).apply();
+    }
+
+    public static String getEmojiKey(){
+        return config.getString(EMOJIKEY, null);
+    }
+
+    public static void addEmojiValue(String value){
+        config.edit().putString(EMOJIVALUE, value).apply();
+    }
+
+    public static String getEmojiValue(){
+        return config.getString(EMOJIVALUE, null);
     }
 }

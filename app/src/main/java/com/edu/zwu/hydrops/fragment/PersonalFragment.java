@@ -45,7 +45,7 @@ public class PersonalFragment extends TakePhotoFragment<PersonalPresenter> imple
 
     private boolean isUpload;
 
-    public ExitActivityTransition mExitTransition;
+//    public ExitActivityTransition mExitTransition;
 
     @OnClick({R.id.personal_head_btn, R.id.personal_head_login_layout, R.id.personal_head_img, R.id.personal_head_text,
             R.id.personal_upload, R.id.personal_friend, R.id.personal_news, R.id.personal_set, R.id.personal_about, R.id.personal_exit})
@@ -114,7 +114,7 @@ public class PersonalFragment extends TakePhotoFragment<PersonalPresenter> imple
     @Override
     protected void afterViews(Bundle savedInstanceState) {
         mPresenter = new PersonalPresenter(this,this.getContext());
-        mExitTransition = ActivityTransition.with(thisActivity.getIntent()).to(mHeadImageView).start(savedInstanceState);
+//        mExitTransition = ActivityTransition.with(thisActivity.getIntent()).to(mHeadImageView).start(savedInstanceState);
         mPresenter.getUserData();
     }
 

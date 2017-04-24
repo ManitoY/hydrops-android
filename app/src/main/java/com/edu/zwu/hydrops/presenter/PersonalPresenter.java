@@ -15,6 +15,7 @@ import java.util.List;
 
 import cn.bmob.v3.BmobQuery;
 import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.BmobWrapper;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.FindListener;
 import cn.bmob.v3.listener.UpdateListener;
@@ -101,7 +102,7 @@ public class PersonalPresenter extends BasePresenter<PersonalPresenter.PersonalV
      */
     public void getUserData() {
         mView.visibility();
-        if (MyApplication.getIsLogin()) {
+        if (MyApplication.getIsLogin() && BmobWrapper.getInstance() != null) {
             MyUser currentUser = BmobUser.getCurrentUser(MyUser.class);
             mView.setHeadText(currentUser.getPetName());
             mView.setHeadImage(currentUser.getHeadImage());
@@ -110,7 +111,7 @@ public class PersonalPresenter extends BasePresenter<PersonalPresenter.PersonalV
     }
 
     public void isTalkUpdate(){
-        if (MyApplication.getIsLogin() && MyApplication.getFriendFreshSetting()) {
+        if (MyApplication.getIsLogin() && MyApplication.getFriendFreshSetting() && BmobWrapper.getInstance() != null) {
             getTalkUpdate();
         }
     }

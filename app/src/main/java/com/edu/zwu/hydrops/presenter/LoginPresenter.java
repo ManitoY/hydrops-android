@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import com.edu.zwu.hydrops.MyApplication;
 import com.edu.zwu.hydrops.base.BasePresenter;
 import com.edu.zwu.hydrops.base.BaseView;
+import com.edu.zwu.hydrops.bmob.Emoji;
 import com.edu.zwu.hydrops.bmob.MyUser;
 import com.edu.zwu.hydrops.util.AppUtil;
 
@@ -25,6 +26,25 @@ public class LoginPresenter extends BasePresenter<LoginPresenter.LoginView> {
 
     public LoginPresenter(LoginView view, Context context) {
         super(view, context);
+        getEmojiList();
+    }
+
+    private void getEmojiList(){
+        BmobQuery<Emoji> query = new BmobQuery<>();
+        query.findObjects(new FindListener<Emoji>() {
+            @Override
+            public void done(List<Emoji> list, BmobException e) {
+                if (e == null){
+                    if (!AppUtil.isListEmpty(list)) {
+
+                    } else {
+                        mView.setErrorHead();
+                    }
+                } else {
+                    mView.setErrorHead();
+                }
+            }
+        });
     }
 
     public boolean isEmptyOfAccount() {

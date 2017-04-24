@@ -53,6 +53,8 @@ import com.edu.zwu.hydrops.bmob.MyUser;
 import com.edu.zwu.hydrops.entity.Banner;
 import com.edu.zwu.hydrops.map.CustomInfoWindow;
 import com.edu.zwu.hydrops.map.LocationManager;
+import com.edu.zwu.hydrops.system.AppStatusConstant;
+import com.edu.zwu.hydrops.system.AppStatusManager;
 import com.edu.zwu.hydrops.util.AppUtil;
 import com.edu.zwu.hydrops.view.BannerViewPager;
 import com.edu.zwu.hydrops.view.CircleImageView;
@@ -226,12 +228,33 @@ public class MapActivity extends BaseActivity implements SensorEventListener, Ba
     }
 
     @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        int action = intent.getIntExtra(AppStatusConstant.KEY_HOME_ACTION, AppStatusConstant.ACTION_BACK_TO_HOME);
+        switch (action) {
+            case AppStatusConstant.ACTION_RESTART_APP:
+                launchActivity();
+                break;
+        }
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        AppStatusManager.getInstance().setAppStatus(AppStatusConstant.STATUS_NORMAL); //进入应用初始化设置成未登录状态
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
     protected int getLayoutId() {
         return R.layout.activity_map;
     }
 
     @Override
     protected void afterViews(Bundle savedInstanceState) {
+        mMapView.onCreate(this, savedInstanceState);
+        Log.i("pxTodp", AppUtil.convertPxToDp(90) + "," + AppUtil.convertPxToDp(35));
+        init();
+        getUserData();
     }
 
     @Override
@@ -552,7 +575,9 @@ public class MapActivity extends BaseActivity implements SensorEventListener, Ba
      * 取消传感器监听
      */
     public void unRegisterSensorListener() {
-        mSensorManager.unregisterListener(this, mSensor);
+        if (mSensorManager != null) {
+            mSensorManager.unregisterListener(this, mSensor);
+        }
     }
 
     @Override
@@ -622,15 +647,6 @@ public class MapActivity extends BaseActivity implements SensorEventListener, Ba
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-//        mMapView.setCustomMapStylePath();
-        mMapView.onCreate(this, savedInstanceState);
-        init();
-        getUserData();
-    }
-
-    @Override
     protected void onResume() {
         super.onResume();
         mMapView.onResume();
@@ -675,7 +691,9 @@ public class MapActivity extends BaseActivity implements SensorEventListener, Ba
         if (Util.isOnMainThread()) {
             Glide.get(getApplicationContext()).clearMemory();
         }
-        mMapView.onDestroy();
+        if (mMapView != null) {
+            mMapView.onDestroy();
+        }
         LocationManager.getInstance().destroyLocation();
         unRegisterSensorListener();
     }

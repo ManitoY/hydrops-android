@@ -13,7 +13,7 @@ import com.edu.zwu.hydrops.fragment.TalkInfoFragment;
 /**
  * Created by shengwei.yi on 2015/12/1.
  */
-public class TalkInfoActivity extends BaseActivity implements TalkInfoFragment.FragmentCallBack{
+public class TalkInfoActivity extends BaseActivity implements TalkInfoFragment.FragmentCallBack {
 
     private TalkInfoFragment mTalkInfoFragment;
 
@@ -48,7 +48,9 @@ public class TalkInfoActivity extends BaseActivity implements TalkInfoFragment.F
 
     @Override
     public void setActionBarRightBtnEnabled(Editable s) {
-        actionBarRightBtn.setEnabled(!TextUtils.isEmpty(s));
+        if (actionBarRightBtn != null) {
+            actionBarRightBtn.setEnabled(!TextUtils.isEmpty(s));
+        }
     }
 
     @Override

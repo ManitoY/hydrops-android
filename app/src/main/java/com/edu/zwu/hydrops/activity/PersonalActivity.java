@@ -33,12 +33,12 @@ public class PersonalActivity extends BaseActivity {
                     | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION);
             getWindow().getDecorView().setFitsSystemWindows(true);
         }
-        actionBarLeftBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mPersonalFragment.mExitTransition.exit(PersonalActivity.this);
-            }
-        });
+//        actionBarLeftBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                mPersonalFragment.mExitTransition.exit(PersonalActivity.this);
+//            }
+//        });
     }
 
     @Override
