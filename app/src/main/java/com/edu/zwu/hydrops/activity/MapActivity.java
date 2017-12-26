@@ -704,6 +704,11 @@ public class MapActivity extends BaseActivity implements SensorEventListener, Ba
     }
 
     @Override
+    public void onMapStatusChangeStart(MapStatus mapStatus, int i) {
+
+    }
+
+    @Override
     public void onMapStatusChange(MapStatus mapStatus) {
 
     }
